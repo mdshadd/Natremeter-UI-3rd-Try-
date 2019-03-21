@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <br><br><br><br>
+  {% load crispy_forms_tags %}
+  <div class="container">
+    <h1>Welcome</h1>
+  </div>
+  <div class="container">
+    <br><br>
+    Lets check you Blood Sodium Level.
+    <br><br>
+    <input class="btn btn-success outline" type="button" onclick="location.href='{% url 'upload_csv' %}';" value="Check" />
+  </div>
+{% endblock content %}
